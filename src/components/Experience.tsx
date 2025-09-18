@@ -1,10 +1,10 @@
-import { useState } from "react";
+import Evangadi from "./works/Evangadi";
+import KodersLab from "./works/KodersLab";
+import OdooIntern from "./works/OdooIntern";
+import ProdigyInfoTech from "./works/ProdigyInfoTech";
 import SectionTitle from "./SectionTitle";
-import Amazon from "./works/Amazon";
-import Apple from "./works/Apple";
-import Google from "./works/Google";
-import ReactBD from "./works/ReactBD";
-import Splash from "./works/Splash";
+import TechHive from "./works/TechHive";
+import { useState } from "react";
 
 const Experience = () => {
   const [workReactbd, setWorkReactbd] = useState(true);
@@ -56,6 +56,16 @@ const Experience = () => {
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex flex-col">
           <li
+              onClick={handleAmazon}
+              className={`${
+                workAmazon
+                  ? "border-l-textGreen text-textGreen"
+                  : "border-l-hoverColor text-textDark"
+              } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
+            >
+              TechHive
+          </li>
+          <li
             onClick={handleReactbd}
             className={`${
               workReactbd
@@ -63,7 +73,7 @@ const Experience = () => {
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            RactBD
+            Evangadi
           </li>
           <li
             onClick={handleGoogle}
@@ -73,7 +83,7 @@ const Experience = () => {
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            Google
+            Odoo Intern
           </li>
           <li
             onClick={handleApple}
@@ -83,7 +93,7 @@ const Experience = () => {
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            Apple
+            KodersLab
           </li>
           <li
             onClick={handleSplash}
@@ -93,24 +103,16 @@ const Experience = () => {
                 : "border-l-hoverColor text-textDark"
             } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
           >
-            Splash
+            ProdigyInfoTech
           </li>
-          <li
-            onClick={handleAmazon}
-            className={`${
-              workAmazon
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor text-textDark"
-            } border-l-2 bg-transparent hover:bg-[#112240] py-3 text-sm  cursor-pointer duration-300 px-8 font-medium`}
-          >
-            Amazon
-          </li>
+
         </ul>
-        {workReactbd && <ReactBD />}
-        {workGoogle && <Google />}
-        {workApple && <Apple />}
-        {workSplash && <Splash />}
-        {workAmazon && <Amazon />}
+        {workAmazon && <TechHive />}
+        {workReactbd && <Evangadi />}
+        {workGoogle && <OdooIntern />}
+        {workApple && <KodersLab />}
+        {workSplash && <ProdigyInfoTech />}
+ 
       </div>
     </section>
   );

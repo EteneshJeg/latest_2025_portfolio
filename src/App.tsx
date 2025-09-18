@@ -1,15 +1,15 @@
 import About from "./components/About";
+import Archive from "./components/Archive";
 import Banner from "./components/Banner";
+import Contact from "./components/Contact";
+import Container from "./components/Container";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import LeftSide from "./components/LeftSide";
 import Navbar from "./components/Navbar";
-import { motion } from "framer-motion";
 import Projects from "./components/Projects";
-import Archive from "./components/Archive";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
 import RightSide from "./components/RightSide";
-import Container from "./components/Container";
+import { motion } from "framer-motion";
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
         >
           <LeftSide />
         </motion.div>
-        <Container className="h-[88vh] mx-auto p-4">
+        <Container className="h-[88vh] mx-20 p-4">
           <Banner />
           <About />
           <Experience />

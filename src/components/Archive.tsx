@@ -1,202 +1,74 @@
-import { useState } from "react";
 import ArchiveCard from "./ArchiveCard";
-import { motion } from "framer-motion";
 
 const Archive = () => {
-  const [showMore, setShowMore] = useState(false);
-
   return (
     <div className="py-24">
       <div className="w-full flex flex-col items-center">
         <h2 className="text-3xl font-titleFont font-semibold">
-          Other Noteworthy Projects
+          Additional Projects
         </h2>
-        <p className="text-sm font-titleFont text-textGreen">
-          view the archive
-        </p>
+        <p className="text-sm font-titleFont text-textGreen">Explore More</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lg:px-10">
         <ArchiveCard
-          title="Educare Engligh Learning Academy"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://www.reactbd.com/projects"
+          title="Advanced AI Q&A System"
+          des=" End-to-end Retrieval-Augmented Generation (RAG) system using Llama 2, Mistral, and 
+          Groq for optimized, context-aware Q&A about websites. Deployed with Streamlit for a smooth 
+          user experience."
+          listItem={["Llama 2", "Mistral", "Groq", "Streamlit", "RAG"]}
+          link="https://github.com/EteneshJeg/AdvancedRAG_Q-A_Project"
         />
         <ArchiveCard
-          title="Cyber Security Blog with live comments section"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://www.reactbd.com/projects"
+          title="Fetan Ethiopian Food Delivery"
+          des=" A responsive Ethiopian food delivery platform with a vibrant menu and an interactive 
+          Dialogflow chatbot for seamless ordering. Built to highlight the rich flavors of Ethiopian 
+          cuisine."
+          listItem={["HTML", "CSS", "JavaScript", "Dialogflow"]}
+          link="https://github.com/EteneshJeg/ethioFoodChatbot"
         />
         <ArchiveCard
-          title="ReactBD web development company"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://www.reactbd.com/projects"
+          title="AI-Powered Video Summarizer"
+          des=" A web app that leverages Google's Gemini AI to analyze and summarize video content. 
+          Users can upload videos, ask questions, and receive AI-driven insights with support for 
+          query-based analysis."
+          listItem={[
+            "Python",
+            "Streamlit",
+            "Google Gemini AI",
+            "DuckDuckGo API",
+          ]}
+          link="https://github.com/EteneshJeg/VideoSummarizerByAgenticAI/tree/main"
         />
         <ArchiveCard
-          title="Amazon Clone with login, cart-option and payment intrigation."
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://www.reactbd.com/projects"
+          title="Netflix Clone"
+          des=" A minimal React + Vite setup with fast refresh and ESLint configuration. 
+          Built to explore modern React development workflows using Vite plugins for 
+          optimal performance."
+          listItem={[
+            "React",
+            "Vite",
+            "ESLint",
+            "@vitejs/plugin-react",
+            "@vitejs/plugin-react-swc",
+          ]}
+          link="https://netflixclonebyetu.vercel.app"
         />
         <ArchiveCard
-          title="JSON data (example data api for test projects)"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-              laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Nextjs", "Tailwind CSS", "next-router"]}
-          link="https://www.reactbd.com/projects"
+          title="Object Detection with YOLOv5"
+          des=" Implemented YOLOv5 object detection models for webcam-based detection 
+          and car detection. Trained and fine-tuned on Google Colab with GPU support, 
+          gaining hands-on experience in practical object detection workflows."
+          listItem={["YOLOv5", "Python", "Google Colab", "Object Detection"]}
+          link="https://www.youtube.com/watch?v=a5SGL1wHV04"
         />
         <ArchiveCard
-          title="Dynamic Responsive Portfolio"
-          des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-          link="https://www.reactbd.com/projects"
+          title="Tic-Tac-Toe Web Application"
+          des=" An interactive web-based Tic-Tac-Toe game built with HTML, CSS, and JavaScript. 
+          Users can play against each other or an AI opponent, with functions handling clicks, 
+          tracking game progress, and validating winning conditions."
+          listItem={["HTML5", "CSS", "JavaScript"]}
+          link="https://prodigy-wd-03.onrender.com/"
         />
-
-        {showMore && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.1 }}
-            >
-              <ArchiveCard
-                title="OREBI e-commerce Shopping store"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "getform.io"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              <ArchiveCard
-                title="Noor Online Shopping Store"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "redux-toolkit"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.3 }}
-            >
-              <ArchiveCard
-                title="Personalized Blog"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Nextjs", "Tailwind CSS", "next-auth", "firebase"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
-              <ArchiveCard
-                title="Shoppers Online Shopping Market"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Nextjs", "react-slick", "redux-toolkit"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-            >
-              <ArchiveCard
-                title="Single Page Personalized Portfolio"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "vercel deploy"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-            >
-              <ArchiveCard
-                title="Nextjs Dynamic Portfolio"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "vercel deploy"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-            >
-              <ArchiveCard
-                title="Bazaar - A Modern Shopping app"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "vercel deploy"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.8 }}
-            >
-              <ArchiveCard
-                title="Blog101 Application"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Nextjs", "Tailwind CSS", "next-auth"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.9 }}
-            >
-              <ArchiveCard
-                title="Todo application"
-                des=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Tailwind CSS", "vercel deploy"]}
-                link="https://www.reactbd.com/projects"
-              />
-            </motion.div>
-          </>
-        )}
-      </div>
-      <div className="mt-12 flex items-center justify-center">
-        {showMore ? (
-          <button
-            onClick={() => setShowMore(false)}
-            className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
-          >
-            Show Less
-          </button>
-        ) : (
-          <button
-            onClick={() => setShowMore(true)}
-            className="w-36 h-12 rounded-md text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
-          >
-            Show More
-          </button>
-        )}
       </div>
     </div>
   );

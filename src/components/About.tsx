@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
+import SectionTitle from "./SectionTitle";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -18,26 +18,29 @@ const About = () => {
           className="w-full lg:w-2/3 text-base text-textDark font-bodyFont flex flex-col gap-6"
         >
           <p>
-            Hello! My name is Noor Mohammad, and I’m passionate about crafting
-            exceptional web experiences. My journey in web development began in
-            2012 when I started experimenting with custom Tumblr themes, where
-            building a custom reblog button sparked my love for HTML and CSS.
+            Hello! My name is Etenesh Gishamo, and I’m passionate about building 
+            intelligent and user-friendly digital experiences. My journey into technology 
+            began with a deep curiosity for problem-solving, which led me to pursue a 
+            Bachelor’s degree in Computer Science and explore both web development 
+            and AI innovation.
           </p>
           <p>
-            Today, I’ve had the privilege of working at an{" "}
+            Over time, I’ve gained hands-on experience developing{" "}
             <span className="text-textGreen">
-              advertising agency, a startup, a major corporation, and a
-              student-led design studio.
+              web, mobile, and AI-powered applications
             </span>{" "}
-            My diverse experiences have honed my skills in creating
-            user-friendly, scalable, and visually appealing applications. I
-            thrive on solving complex problems and bringing ideas to life on the
-            internet.
+              from employee management systems with ID 
+              generation to AI-driven Q&A systems, video summarizers, 
+              and object detection tools. I thrive at the intersection 
+              of creativity and technology, combining full-stack 
+              development with Generative AI to deliver impactful, 
+              real-world solutions.
           </p>
           <p>
-            I’m constantly learning and adapting to new technologies to stay at
-            the forefront of web development. My focus is on building seamless,
-            performant, and accessible digital solutions.
+              I’m constantly learning and experimenting with modern frameworks and AI 
+              tools to stay ahead in this fast-moving field. My focus is on creating scalable, 
+              reliable, and intuitive applications that not only solve problems but 
+              also elevate user experiences.
           </p>
           <p className="font-titleFont font-semibold text-textLight">
             Here are some technologies I’ve been working with recently:
@@ -45,13 +48,19 @@ const About = () => {
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-3 mt-4">
             {[
               "JavaScript (ES6+)",
-              "Next.js",
-              "React",
-              "Node.js",
               "TypeScript",
+              "React",
+              "Next.js",
+              "Node.js",
               "Express.js",
-              "MongoDB",
+              "Laravel",
+              "React Native",
+              "PostgreSQL",
+              "MySQL",
+              "Firebase",
               "Tailwind CSS",
+              "Odoo ERP",
+              "Generative AI (LLMs)",
             ].map((tech, index) => (
               <motion.li
                 key={tech}
@@ -78,7 +87,7 @@ const About = () => {
           <div className="absolute w-full h-80 rounded-lg overflow-hidden shadow-navbarShadow">
             <img
               className="w-full h-full object-cover rounded-lg transition-transform duration-300 group-hover:scale-105"
-              src={"/assets/images/profile.png"}
+              src={"/assets/images/etu_profile.png"}
               alt="Profile Image"
             />
             <div className="absolute inset-0 bg-textGreen/20 rounded-lg transition-opacity duration-300 group-hover:opacity-0"></div>

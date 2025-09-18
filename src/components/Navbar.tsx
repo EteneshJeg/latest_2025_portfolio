@@ -1,15 +1,10 @@
-import { useRef } from "react";
-import { useState } from "react";
-import { TbBrandGithub } from "react-icons/tb";
-import {
-  SlSocialYoutube,
-  SlSocialLinkedin,
-  SlSocialFacebook,
-  SlSocialInstagram,
-} from "react-icons/sl";
-import { MdOutlineClose } from "react-icons/md";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import { SlSocialLinkedin, SlSocialYoutube } from "react-icons/sl";
+import { useRef, useState } from "react";
+
 import Container from "./Container";
+import { MdOutlineClose } from "react-icons/md";
+import { TbBrandGithub } from "react-icons/tb";
 
 const Navbar = () => {
   const ref = useRef(null);
@@ -52,7 +47,7 @@ const Navbar = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.1 }}
           >
-            <img className="w-14" src={"/assets/images/logo.png"} alt="logo" />
+            <img className="w-14" src={"/assets/images/elogo.png"} alt="logo" />
           </motion.div>
         </a>
         {/* ============ Logo End here ============== */}
@@ -129,7 +124,7 @@ const Navbar = () => {
               </motion.li>
             </a>
           </ul>
-          <a href="/assets/noor_resume.pdf" target="_blank">
+          <a href="/assets/EteneshGishamoResume.pdf" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -263,7 +258,7 @@ const Navbar = () => {
                       </motion.li>
                     </a>
                   </ul>
-                  <a href="/assets/noor_resume.pdf" target="_blank">
+                  <a href="/assets/EteneshGishamoResume.pdf" target="_blank">
                     <motion.button
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
@@ -278,7 +273,7 @@ const Navbar = () => {
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.8, ease: "easeIn" }}
-                      href="https://github.com/noorjsdivs"
+                      href="https://github.com/EteneshJeg"
                       target="_blank"
                     >
                       <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -289,7 +284,7 @@ const Navbar = () => {
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.85, ease: "easeIn" }}
-                      href="https://www.youtube.com/channel/UChkOsij0dhgft0GhHRauOAA"
+                      href="https://www.youtube.com/@techwzEtu"
                       target="_blank"
                     >
                       <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
@@ -300,33 +295,11 @@ const Navbar = () => {
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.9, ease: "easeIn" }}
-                      href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+                      href="https://www.linkedin.com/in/etenesh-gishamo-1b13a2272/"
                       target="_blank"
                     >
                       <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
                         <SlSocialLinkedin />
-                      </span>
-                    </motion.a>
-                    <motion.a
-                      initial={{ y: 20, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 0.95, ease: "easeIn" }}
-                      href="https://www.facebook.com/Noorlalu143/"
-                      target="_blank"
-                    >
-                      <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-                        <SlSocialFacebook />
-                      </span>
-                    </motion.a>
-                    <motion.a
-                      initial={{ y: 20, opacity: 0 }}
-                      animate={{ y: 0, opacity: 1 }}
-                      transition={{ delay: 1, ease: "easeIn" }}
-                      href="https://www.instagram.com/simplenoor143/"
-                      target="_blank"
-                    >
-                      <span className="w-10 h-10 text-xl bg-bodyColor border-[1px] border-zinc-700 hover:border-textGreen text-zinc-200 rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 transition-all duration-300">
-                        <SlSocialInstagram />
                       </span>
                     </motion.a>
                   </div>
@@ -336,9 +309,9 @@ const Navbar = () => {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1.2, ease: "easeIn" }}
                   className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
-                  href="mailto:noor.jsdivs@gmail.com"
+                  href="mailto:etenesh4good@gmail.com"
                 >
-                  <p>reactbd@proton.me</p>
+                  <p>etenesh4good@gmail.com</p>
                 </motion.a>
               </motion.div>
             </motion.div>
