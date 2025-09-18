@@ -10,19 +10,23 @@ interface Props {
 
 const ArchiveCard = ({ title, des, listItem, link }: Props) => {
   return (
-    <a href={link} target="_blank">
-      <div className="w-full h-80 rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group">
+    <a href={link} target="_blank" rel="noreferrer">
+      <div className="w-full rounded-lg bg-[#112240] p-7 flex flex-col justify-center gap-6 hover:-translate-y-2 transition-transform duration-300 group">
         <div className="flex justify-between items-center">
-          <FaRegFolder className="text-4xl text-textGreen" />
-          <RxOpenInNewWindow className="text-2xl hover:text-textGreen" />
+          {/* Hide icons on mobile */}
+          <FaRegFolder className="text-4xl text-textGreen hidden md:block" />
+          <RxOpenInNewWindow className="text-2xl hover:text-textGreen hidden md:block" />
         </div>
         <div>
           <h2 className="text-xl font-titleFont font-semibold tracking-wide group-hover:text-textGreen">
             {title}
           </h2>
-          <p className="text-sm mt-3">{des}</p>
+          <p className="text-sm mt-3">
+            {des.length > 150 ? des.slice(0, 150) + "..." : des}
+          </p>
         </div>
-        <ul className="text-xs md:text-sm text-textDark flex items-center gap-2 justify-between flex-wrap">
+        {/* Hide tech stack on mobile */}
+        <ul className="hidden md:flex text-xs md:text-sm text-textDark flex-wrap gap-2 justify-between">
           {listItem.map((item, i) => (
             <li key={i}>{item}</li>
           ))}

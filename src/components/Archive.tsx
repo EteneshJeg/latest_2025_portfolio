@@ -7,7 +7,9 @@ const Archive = () => {
         <h2 className="text-3xl font-titleFont font-semibold">
           Additional Projects
         </h2>
-        <p className="text-sm font-titleFont text-textGreen">Explore More</p>
+        <p className="text-sm font-titleFont text-textGreen hidden md:flex">
+          Explore More
+        </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lg:px-10">
         <ArchiveCard
@@ -55,18 +57,24 @@ const Archive = () => {
         />
         <ArchiveCard
           title="Object Detection with YOLOv5"
-          des=" Implemented YOLOv5 object detection models for webcam-based detection 
-          and car detection. Trained and fine-tuned on Google Colab with GPU support, 
-          gaining hands-on experience in practical object detection workflows."
+          des=" Implemented YOLOv5 models for webcam and car detection,
+          gaining hands-on experience in 
+          object detection workflows."
           listItem={["YOLOv5", "Python", "Google Colab", "Object Detection"]}
           link="https://www.youtube.com/watch?v=a5SGL1wHV04"
         />
         <ArchiveCard
           title="Tic-Tac-Toe Web Application"
-          des=" An interactive web-based Tic-Tac-Toe game built with HTML, CSS, and JavaScript. 
-          Users can play against each other or an AI opponent, with functions handling clicks, 
-          tracking game progress, and validating winning conditions."
-          listItem={["HTML5", "CSS", "JavaScript"]}
+          des="An engaging web-based Tic-Tac-Toe game built with HTML, CSS, 
+          and JavaScript. Users can challenge each other or play against an 
+          AI opponent, with smooth interactions, real-time tracking of moves, 
+          and automatic win validation to enhance gameplay."
+          listItem={[
+            "HTML5 Markup",
+            "CSS Styling",
+            "JavaScript Logic",
+            "Interactive UI",
+          ]}
           link="https://prodigy-wd-03.onrender.com/"
         />
       </div>

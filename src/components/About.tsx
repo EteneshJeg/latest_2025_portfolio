@@ -18,29 +18,28 @@ const About = () => {
           className="w-full lg:w-2/3 text-base text-textDark font-bodyFont flex flex-col gap-6"
         >
           <p>
-            Hello! My name is Etenesh Gishamo, and I’m passionate about building 
-            intelligent and user-friendly digital experiences. My journey into technology 
-            began with a deep curiosity for problem-solving, which led me to pursue a 
-            Bachelor’s degree in Computer Science and explore both web development 
-            and AI innovation.
+            Hello! My name is Etenesh Gishamo, and I’m passionate about building
+            intelligent and user-friendly digital experiences. My journey into
+            technology began with a deep curiosity for problem-solving, which
+            led me to pursue a Bachelor’s degree in Computer Science and explore
+            both web development and AI innovation.
           </p>
           <p>
             Over time, I’ve gained hands-on experience developing{" "}
             <span className="text-textGreen">
               web, mobile, and AI-powered applications
             </span>{" "}
-              from employee management systems with ID 
-              generation to AI-driven Q&A systems, video summarizers, 
-              and object detection tools. I thrive at the intersection 
-              of creativity and technology, combining full-stack 
-              development with Generative AI to deliver impactful, 
-              real-world solutions.
+            from employee management systems with ID generation to AI-driven Q&A
+            systems, video summarizers, and object detection tools. I thrive at
+            the intersection of creativity and technology, combining full-stack
+            development with Generative AI to deliver impactful, real-world
+            solutions.
           </p>
           <p>
-              I’m constantly learning and experimenting with modern frameworks and AI 
-              tools to stay ahead in this fast-moving field. My focus is on creating scalable, 
-              reliable, and intuitive applications that not only solve problems but 
-              also elevate user experiences.
+            I’m constantly learning and experimenting with modern frameworks and
+            AI tools to stay ahead in this fast-moving field. My focus is on
+            creating scalable, reliable, and intuitive applications that not
+            only solve problems but also elevate user experiences.
           </p>
           <p className="font-titleFont font-semibold text-textLight">
             Here are some technologies I’ve been working with recently:
@@ -82,7 +81,7 @@ const About = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="w-full lg:w-1/3 h-80 relative group"
+          className="w-full lg:w-1/3 h-80 relative group block md:hidden lg:block"
         >
           <div className="absolute w-full h-80 rounded-lg overflow-hidden shadow-navbarShadow">
             <img
