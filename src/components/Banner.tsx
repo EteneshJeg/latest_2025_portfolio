@@ -19,7 +19,7 @@ const Banner = () => {
       >
         Etenesh Gishamo.
         <span className="text-textDark mt-2 lg:mt-4">
-          Full Stack & Generative AI Developer
+          Full Stack Developer|PHP|Laravel & Generative AI Developer
         </span>
       </motion.h1>
       <motion.p

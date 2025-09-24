@@ -24,7 +24,7 @@ function App() {
         >
           <LeftSide />
         </motion.div>
-        <Container className="h-[88vh] mx-20 p-4">
+        <Container className="h-[88vh] px-4 sm:px-6 md:px-10 lg:px-16 xl:px-20">
           <Banner />
           <About />
           <Experience />

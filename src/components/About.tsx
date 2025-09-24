@@ -46,13 +46,14 @@ const About = () => {
           </p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-3 mt-4">
             {[
+              "PHP",
+              "Laravel",
               "JavaScript (ES6+)",
               "TypeScript",
               "React",
               "Next.js",
               "Node.js",
               "Express.js",
-              "Laravel",
               "React Native",
               "PostgreSQL",
               "MySQL",

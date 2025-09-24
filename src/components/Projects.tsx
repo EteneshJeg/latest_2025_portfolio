@@ -86,12 +86,12 @@ const Projects = () => {
             </div>
             <p className="text-sm md:text-base bg-[#112240] p-2 md:p-6 rounded-md xl:-mr-16">
               A user-friendly{" "}
-              <span className="text-textGreen">Exam Preparation Platform</span>
+              <span className="text-textGreen">Exam Preparation Platform </span>
               designed to help students excel with{" "}
               <span className="text-textGreen">study materials</span>,
               <span className="text-textGreen">summaries</span>, practice
               questions, and
-              <span className="text-textGreen">interactive quizzes</span>.
+              <span className="text-textGreen"> interactive quizzes</span>.
               Includes a secure{" "}
               <span className="text-textGreen">admin dashboard</span> for
               managing study content and quizzes effectively.
